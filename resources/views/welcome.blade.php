@@ -4,20 +4,27 @@
         <meta charset="utf-8">
     	    <meta name="viewport" content="width=device-width, initial-scale=1">
     	    <title>ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ | Krushi Rajya Raitha Sangha</title>
-    	    {{-- @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
-    	        @vite(['css/app.css', 'resources/js/app.js'])
-    	    @else --}}
     	        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    	    {{-- @endif --}}
+                <link rel="icon" type="image/png" href="{{ asset('images/logo/KRRS.png') }}">
+                <link rel="apple-touch-icon" href="{{ asset('images/logo/KRRS.png') }}">
     	</head>
     	<body>
-    	<div class="top-bar" data-kn="ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ - ನೆಲ, ನೀರು, ಬೆಲೆ ನ್ಯಾಯಕ್ಕಾಗಿ" data-en="Krushi Rajya Raitha Sangha - For fair land, water, and price rights">
-    	    ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ - ನೆಲ, ನೀರು, ಬೆಲೆ ನ್ಯಾಯಕ್ಕಾಗಿ
-    	</div>
+            <div id="preloader">
+                <img src="{{ asset('images/logo/KRRS.png') }}" alt="Loading">
+            </div>
+
+            <div class="top-bar" data-kn="ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ - ನೆಲ, ನೀರು, ಬೆಲೆ ನ್ಯಾಯಕ್ಕಾಗಿ" data-en="Krushi Rajya Raitha Sangha - For fair land, water, and price rights">
+                ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ - ನೆಲ, ನೀರು, ಬೆಲೆ ನ್ಯಾಯಕ್ಕಾಗಿ
+            </div>
 
         <header class="container">
     	    <nav class="nav">
-    	        <div class="brand" data-kn="ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ" data-en="Krushi Rajya Raitha Sangha">ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ</div>
+    	        <div class="brand">
+                    <img src="{{ asset('images/logo/KRRS.png') }}" alt="KRRS Logo" class="logo">
+                    <span data-kn="ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ" data-en="Krushi Rajya Raitha Sangha">
+                        ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ
+                    </span>
+                </div>
     	        <button class="lang-switch" id="lang-toggle" type="button">English</button>
     	    </nav>
 
@@ -80,11 +87,32 @@
     	    </section>
     	</main>
 
-    	<footer>
-    	    <p data-kn="© 2026 ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ | ರೈತ ಕುಟುಂಬಗಳಿಗೆ ಬಲವಾದ ಭವಿಷ್ಯ" data-en="© 2026 Krushi Rajya Raitha Sangha | Building a stronger future for farming families">
-    	        © 2026 ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ | ರೈತ ಕುಟುಂಬಗಳಿಗೆ ಬಲವಾದ ಭವಿಷ್ಯ
-    	    </p>
-    	</footer>
+    	<footer class="site-footer">
+            <div class="container footer-inner">
+
+                <div class="footer-brand">
+                    <img src="{{ asset('images/logo/KRRS.png') }}" alt="KRRS Logo" class="footer-logo">
+                    <div class="footer-text">
+                        <strong data-kn="ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ" data-en="Krushi Rajya Raitha Sangha">
+                            ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ
+                        </strong>
+                        <p data-kn="ರೈತ ಕುಟುಂಬಗಳಿಗೆ ಬಲವಾದ ಭವಿಷ್ಯ"
+                        data-en="Building a stronger future for farming families">
+                        ರೈತ ಕುಟುಂಬಗಳಿಗೆ ಬಲವಾದ ಭವಿಷ್ಯ
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-credit">
+                    <p data-kn="© 2026 ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ | ವಿನ್ಯಾಸ, ಅಭಿವೃದ್ಧಿ ಮತ್ತು ನಿರ್ವಹಣೆ: <a href='https://meetmytech.com/' target='_blank' rel='noopener'>meetmytech</a>"
+                    data-en="© 2026 Krushi Rajya Raitha Sangha | Designed, Developed & Maintained by <a href='https://meetmytech.com/' target='_blank' rel='noopener'>meetmytech</a>">
+                    © 2026 ಕೃಷಿ ರಾಜ್ಯ ರೈತ ಸಂಘ |
+                    <a href="https://meetmytech.com/" target="_blank" rel="noopener">meetmytech</a>
+                    </p>
+                </div>
+
+            </div>
+        </footer>
 
     	<script>
     	    const toggleButton = document.getElementById('lang-toggle');
@@ -93,7 +121,7 @@
 
     	    const applyLanguage = (language) => {
     	        translatableNodes.forEach((node) => {
-    	            node.textContent = node.dataset[language];
+    	            node.innerHTML  = node.dataset[language];
     	        });
 
     	        document.documentElement.lang = language;
@@ -106,6 +134,16 @@
    	    });
 
    	    applyLanguage('kn');
+
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.style.opacity = '0';
+                preloader.style.transition = 'opacity 0.4s ease';
+                setTimeout(() => preloader.remove(), 400);
+            }
+        });
+
    	</script>
 	</body>
 </html>
